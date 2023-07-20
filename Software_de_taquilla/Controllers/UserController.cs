@@ -16,6 +16,7 @@ namespace Software_de_taquilla.Controllers
             this.view = view;
             this.view.btn_login.Click += new EventHandler(this.buildView);
         }
+        //Agregue esto
 
         private void buildView(Object sender, EventArgs e)
         {
