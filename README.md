@@ -11,7 +11,7 @@
 
 | Estudiante | Carnet |
 | --- | --- |
-| [`David Alejandro Carrillo de la Roca`](dcarrillod1@miumg.edu.gt) | `0901-20-32010901-20-3201`
+| [`David Alejandro Carrillo de la Roca`](dcarrillod1@miumg.edu.gt) | `0901-20-3201`
 | [`Andrea Cecilia Corado Paiz`](acoradop@miumg.edu.gt) | `0901-20-1381`
 | [`Carol Cecilia Chuy Escobar`](cchuye@miumg.edu.gt) | `0901-20-1069`
 | [`Otto Adrian Lopez Ventura`](olopezv6@miumg.edu.gt) | `0901-20-1069`
