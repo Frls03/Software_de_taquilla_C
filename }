@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,14 +19,6 @@ namespace Software_de_taquilla.Controllers
             this.view = view;
             this.view.Load += new EventHandler(this.buildComponent);
             this.view.combo_cine.SelectedIndexChanged += new EventHandler(this.filtrar);
-            this.view.combo_city.SelectedIndexChanged += new EventHandler(this.filtrarCine);
-        }
-
-        public void filtrarCine(object sender, EventArgs e)
-        {
-            this.view.combo_cine.Items.Clear();
-            this.view.combo_cine.DataSource = null;
-            this.fillCine(this.view.combo_city.SelectedIndex + 1);
         }
 
         public void filtrar(object sender, EventArgs e)
@@ -57,7 +49,7 @@ namespace Software_de_taquilla.Controllers
         public void buildComponent(object sender, EventArgs e)
         {
             this.fillCity();
-            this.fillCine(-1);
+            this.fillCine();
             this.fillMovies(-1, -1);
         }
 
@@ -75,6 +67,7 @@ namespace Software_de_taquilla.Controllers
         {
             CityDao mydao = new CityDao();
             List<Cine> cts = mydao.getCine();
+            this.view.printMessage(id_ciudad.ToString());
             foreach (Cine c in cts)
             {
                 if (n == -1) this.view.combo_cine.Items.Add(c.lugar);
@@ -82,7 +75,6 @@ namespace Software_de_taquilla.Controllers
                 {
                     if (c.id_ciudad.Equals(n))
                     {
-                        this.view.combo_cine.Items.Add(c.lugar);
                     }
                 }
             }

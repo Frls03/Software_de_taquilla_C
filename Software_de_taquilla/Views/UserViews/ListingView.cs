@@ -18,5 +18,15 @@ namespace Software_de_taquilla.Views.UserViews
             InitializeComponent();
             ListingController controller = new ListingController(this);
         }
+
+        public void printMessage(string msg)
+        {
+            MessageBox.Show(msg);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

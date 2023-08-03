@@ -39,9 +39,14 @@ namespace Software_de_taquilla.Views.UserViews
             Button btn = (Button)sender;
             string id = btn.Name.Replace("btN_", "");
             SeleccionBoletos sb = new SeleccionBoletos(this.objetos);
+            sb.FormClosed += new FormClosedEventHandler(this.fclosed);
             this.Visible = false;
             sb.ShowDialog();
-            this.Visible = true;
+        }
+
+        public void fclosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
 
         public void fillSchedules()

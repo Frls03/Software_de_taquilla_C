@@ -29,122 +29,147 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListingView));
-            this.btnNotificacion = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.flow_container = new System.Windows.Forms.FlowLayoutPanel();
-            this.combo_city = new System.Windows.Forms.ComboBox();
-            this.combo_cine = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnNotificacion = new Button();
+            label2 = new Label();
+            label1 = new Label();
+            flow_container = new FlowLayoutPanel();
+            combo_city = new ComboBox();
+            combo_cine = new ComboBox();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // btnNotificacion
             // 
-            this.btnNotificacion.FlatAppearance.BorderSize = 0;
-            this.btnNotificacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacion.Image = ((System.Drawing.Image)(resources.GetObject("btnNotificacion.Image")));
-            this.btnNotificacion.Location = new System.Drawing.Point(842, 49);
-            this.btnNotificacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnNotificacion.Name = "btnNotificacion";
-            this.btnNotificacion.Size = new System.Drawing.Size(43, 52);
-            this.btnNotificacion.TabIndex = 25;
-            this.btnNotificacion.UseVisualStyleBackColor = true;
+            btnNotificacion.FlatAppearance.BorderSize = 0;
+            btnNotificacion.FlatStyle = FlatStyle.Flat;
+            btnNotificacion.Image = (Image)resources.GetObject("btnNotificacion.Image");
+            btnNotificacion.Location = new Point(737, 37);
+            btnNotificacion.Name = "btnNotificacion";
+            btnNotificacion.Size = new Size(38, 39);
+            btnNotificacion.TabIndex = 25;
+            btnNotificacion.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(64)))), ((int)(((byte)(76)))));
-            this.label2.Location = new System.Drawing.Point(159, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 36);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Cartelera";
+            label2.AutoSize = true;
+            label2.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(12, 64, 76);
+            label2.Location = new Point(32, 53);
+            label2.Name = "label2";
+            label2.Size = new Size(127, 28);
+            label2.TabIndex = 17;
+            label2.Text = "Cartelera";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.label1.Location = new System.Drawing.Point(159, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 19);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Bienvenido";
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(188, 188, 188);
+            label1.Location = new Point(32, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 16);
+            label1.TabIndex = 16;
+            label1.Text = "Bienvenido";
             // 
             // flow_container
             // 
-            this.flow_container.AutoScroll = true;
-            this.flow_container.Location = new System.Drawing.Point(37, 167);
-            this.flow_container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flow_container.Name = "flow_container";
-            this.flow_container.Size = new System.Drawing.Size(849, 399);
-            this.flow_container.TabIndex = 26;
+            flow_container.AutoScroll = true;
+            flow_container.Location = new Point(32, 102);
+            flow_container.Name = "flow_container";
+            flow_container.Size = new Size(743, 319);
+            flow_container.TabIndex = 26;
             // 
             // combo_city
             // 
-            this.combo_city.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_city.FormattingEnabled = true;
-            this.combo_city.Location = new System.Drawing.Point(465, 61);
-            this.combo_city.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.combo_city.Name = "combo_city";
-            this.combo_city.Size = new System.Drawing.Size(138, 28);
-            this.combo_city.TabIndex = 27;
+            combo_city.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_city.FormattingEnabled = true;
+            combo_city.Location = new Point(407, 46);
+            combo_city.Name = "combo_city";
+            combo_city.Size = new Size(121, 23);
+            combo_city.TabIndex = 27;
             // 
             // combo_cine
             // 
-            this.combo_cine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_cine.FormattingEnabled = true;
-            this.combo_cine.Location = new System.Drawing.Point(665, 63);
-            this.combo_cine.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.combo_cine.Name = "combo_cine";
-            this.combo_cine.Size = new System.Drawing.Size(138, 28);
-            this.combo_cine.TabIndex = 28;
+            combo_cine.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_cine.FormattingEnabled = true;
+            combo_cine.Location = new Point(582, 47);
+            combo_cine.Name = "combo_cine";
+            combo_cine.Size = new Size(121, 23);
+            combo_cine.TabIndex = 28;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.label3.Location = new System.Drawing.Point(465, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 19);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Ciudad";
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(188, 188, 188);
+            label3.Location = new Point(407, 27);
+            label3.Name = "label3";
+            label3.Size = new Size(56, 16);
+            label3.TabIndex = 29;
+            label3.Text = "Ciudad";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(188)))), ((int)(((byte)(188)))));
-            this.label4.Location = new System.Drawing.Point(665, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 19);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Cine";
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(188, 188, 188);
+            label4.Location = new Point(582, 27);
+            label4.Name = "label4";
+            label4.Size = new Size(37, 16);
+            label4.TabIndex = 30;
+            label4.Text = "Cine";
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.FromArgb(108, 84, 253);
+            label5.Location = new Point(719, 444);
+            label5.Name = "label5";
+            label5.Size = new Size(31, 15);
+            label5.TabIndex = 32;
+            label5.Text = "Salir";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(756, 443);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(19, 16);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 31;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // ListingView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(914, 600);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.combo_cine);
-            this.Controls.Add(this.combo_city);
-            this.Controls.Add(this.flow_container);
-            this.Controls.Add(this.btnNotificacion);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "ListingView";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Listing";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(806, 478);
+            Controls.Add(label5);
+            Controls.Add(pictureBox1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(combo_cine);
+            Controls.Add(combo_city);
+            Controls.Add(flow_container);
+            Controls.Add(btnNotificacion);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "ListingView";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "s";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -156,5 +181,7 @@
         public ComboBox combo_cine;
         private Label label3;
         private Label label4;
+        private Label label5;
+        private PictureBox pictureBox1;
     }
 }
