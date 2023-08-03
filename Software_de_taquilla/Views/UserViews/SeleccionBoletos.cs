@@ -64,7 +64,6 @@ namespace Software_de_taquilla.Views.UserViews
             int cantidad = Convert.ToInt32(txt_n1.Text) + Convert.ToInt32(txt_n2.Text) + Convert.ToInt32(txt_n3.Text);
             double monto = Convert.ToInt32(txt_n1.Text) * 46 + Convert.ToInt32(txt_n2.Text) * 39 + Convert.ToInt32(txt_n3.Text) * 39;
 
-            this.Visible = false;
             //Asientos asi = new Asientos(movie, cantidad, monto);
             this.objetos.Add(cantidad);
             this.objetos.Add(monto);
@@ -72,8 +71,15 @@ namespace Software_de_taquilla.Views.UserViews
             this.objetos.Add(Convert.ToInt32(txt_n2.Text));
             this.objetos.Add(Convert.ToInt32(txt_n3.Text));
             Asientos asi = new Asientos(this.objetos);
+            asi.FormClosing += new FormClosingEventHandler(this.FClosed);
+            this.Visible = false;
             asi.ShowDialog();
-            this.Visible = true;
         }
+
+        public void FClosed(Object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

@@ -67,6 +67,10 @@ namespace Software_de_taquilla.Controllers
                 if (myuser.userExist(user, pass, rol + 1))
                 {
                     this.openByRole(rol + 1);
+                    this.view.txt_pass.Text = "";
+                    this.view.txt_user.Text = "";
+                    this.view.combo_role.DataSource = null;
+                    this.view.combo_role.Items.Clear();
                 }
                 else
                 {

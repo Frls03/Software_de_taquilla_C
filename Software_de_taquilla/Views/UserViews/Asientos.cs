@@ -53,7 +53,7 @@ namespace Software_de_taquilla.Views.UserViews
                             if (asi.estado == 1)
                             {
                                 button.BackColor = Color.Red;
-                                button.Enabled=false;
+                                button.Enabled = false;
                             }
                             else
                             {
@@ -134,9 +134,15 @@ namespace Software_de_taquilla.Views.UserViews
             }
             MessageBox.Show("Asientos reserados temporalmente");
             Pagos pagosForm = new Pagos(objetos, id_asientos);
+            pagosForm.FormClosed += new FormClosedEventHandler(this.FormClosed);
             this.Visible = false;
             pagosForm.ShowDialog();
-            this.Visible = true;
+        }
+
+
+        public void FormClosed(Object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

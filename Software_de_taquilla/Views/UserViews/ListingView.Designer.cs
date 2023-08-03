@@ -166,7 +166,7 @@
             Controls.Add(label1);
             Name = "ListingView";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Listing";
+            Text = "s";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
