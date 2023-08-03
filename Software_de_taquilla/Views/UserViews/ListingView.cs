@@ -23,5 +23,10 @@ namespace Software_de_taquilla.Views.UserViews
         {
             MessageBox.Show(msg);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
