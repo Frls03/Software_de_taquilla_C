@@ -22,11 +22,29 @@ namespace Software_de_taquilla.Views.UserViews.components
             this.mov = movie;
             InitializeComponent();
             label1.Text = mov.name;
-            picture.Image = Image.FromFile("./../../../images/" + mov.image);
+            //picture.Image = Image.FromFile("./../../../images/" + mov.image);
+            this.loadImage("./../../../images/" + mov.image);
             int duracion = Convert.ToInt32(mov.duration);
             time_line.Value = duracion;
             label2.Text = duracion.ToString() + "min";
         }
+
+        public void loadImage(string path)
+        {
+            Image image;
+            FileStream myStream = new FileStream(path, FileMode.Open);
+            try
+            {
+                image = Image.FromStream(myStream);
+                picture.Image = image;
+            }
+            finally
+            {
+                myStream.Close();
+                myStream.Dispose();
+            }
+        }
+
 
 
 
